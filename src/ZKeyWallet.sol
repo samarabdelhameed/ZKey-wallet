@@ -2,26 +2,26 @@
 pragma solidity ^0.8.17;
 
 // 🟢 Importing zkSync system contracts and utilities
-import {IAccount, ACCOUNT_VALIDATION_SUCCESS_MAGIC} from '@matterlabs/zksync-contracts/l2/system-contracts/interfaces/IAccount.sol';
-import {Transaction, TransactionHelper} from '@matterlabs/zksync-contracts/l2/system-contracts/libraries/TransactionHelper.sol';
-import {EfficientCall} from '@matterlabs/zksync-contracts/l2/system-contracts/libraries/EfficientCall.sol';
-import {NONCE_HOLDER_SYSTEM_CONTRACT, DEPLOYER_SYSTEM_CONTRACT, INonceHolder} from '@matterlabs/zksync-contracts/l2/system-contracts/Constants.sol';
-import {SystemContractsCaller} from '@matterlabs/zksync-contracts/l2/system-contracts/libraries/SystemContractsCaller.sol';
-import {Utils} from '@matterlabs/zksync-contracts/l2/system-contracts/libraries/Utils.sol';
-import {Initializable} from '@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol';
+import {IAccount, ACCOUNT_VALIDATION_SUCCESS_MAGIC} from "@zksync/interfaces/IAccount.sol";
+import {Transaction, TransactionHelper} from "@zksync/libraries/TransactionHelper.sol";
+import {EfficientCall} from "@zksync/libraries/EfficientCall.sol";
+import {NONCE_HOLDER_SYSTEM_CONTRACT, DEPLOYER_SYSTEM_CONTRACT, INonceHolder} from "@zksync/Constants.sol";
+import {SystemContractsCaller} from "@zksync/libraries/SystemContractsCaller.sol";
+import {Utils} from "@zksync/libraries/Utils.sol";
 
 // 🟢 Importing internal contract dependencies
-import {HookManager} from './managers/HookManager.sol';
-import {ModuleManager} from './managers/ModuleManager.sol';
-import {UpgradeManager} from './managers/UpgradeManager.sol';
-import {TokenCallbackHandler, IERC165} from './helpers/TokenCallbackHandler.sol';
-import {Errors} from './libraries/Errors.sol';
-import {SignatureDecoder} from './libraries/SignatureDecoder.sol';
-import {ERC1271Handler} from './handlers/ERC1271Handler.sol';
-import {Call} from './batch/BatchCaller.sol';
+import {HookManager} from "src/managers/HookManager.sol";
+import {ModuleManager} from "src/managers/ModuleManager.sol";
+import {UpgradeManager} from "src/managers/UpgradeManager.sol";
+import {TokenCallbackHandler, IERC165} from "src/helpers/TokenCallbackHandler.sol";
+import {Errors} from "src/libraries/Errors.sol";
+import {SignatureDecoder} from "src/libraries/SignatureDecoder.sol";
+import {ERC1271Handler} from "src/handlers/ERC1271Handler.sol";
+import {Call} from "src/batch/BatchCaller.sol";
 
 // 🟢 Importing the account interface for ZKeyWallet
-import {IZKeyAccount} from './interfaces/IZKey.sol';
+import {IZKeyAccount} from "src/interfaces/IZKey.sol";
+
 
 /**
  * @title ZKeyWallet - Smart Wallet for the zkSync Era
