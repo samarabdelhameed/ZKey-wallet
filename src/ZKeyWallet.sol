@@ -2,7 +2,8 @@
 pragma solidity ^0.8.17;
 
 // 🟢 Importing zkSync system contracts and utilities
-import {IAccount, ACCOUNT_VALIDATION_SUCCESS_MAGIC} from "@zksync/interfaces/IAccount.sol";
+import {IAccount, ACCOUNT_VALIDATION_SUCCESS_MAGIC} from "zksync-era/system-contracts/contracts/interfaces/IAccount.sol";
+
 import {Transaction, TransactionHelper} from "@zksync/libraries/TransactionHelper.sol";
 import {EfficientCall} from "@zksync/libraries/EfficientCall.sol";
 import {NONCE_HOLDER_SYSTEM_CONTRACT, DEPLOYER_SYSTEM_CONTRACT, INonceHolder} from "@zksync/Constants.sol";

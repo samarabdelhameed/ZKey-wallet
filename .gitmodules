@@ -16,3 +16,6 @@
 [submodule "lib/halmos-cheatcodes"]
 	path = lib/halmos-cheatcodes
 	url = https://github.com/a16z/halmos-cheatcodes
+[submodule "lib/zksync-era"]
+	path = lib/zksync-era
+	url = https://github.com/matter-labs/zksync-era

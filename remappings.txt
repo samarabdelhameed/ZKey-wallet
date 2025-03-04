@@ -1,8 +1,13 @@
 @openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
 @openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
 account-abstraction/=lib/account-abstraction/contracts/
+ds-test/=lib/zksync-era/contracts/l1-contracts/lib/forge-std/lib/ds-test/src/
 erc4626-tests/=lib/erc4626-tests/
 forge-std/=lib/forge-std/src/
 halmos-cheatcodes/=lib/halmos-cheatcodes/src/
+murky/=lib/zksync-era/contracts/l1-contracts/lib/murky/
 openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/
 openzeppelin-contracts/=lib/openzeppelin-contracts/
+zksync-era/=lib/zksync-era/contracts/
+@zksync/=lib/zksync-era/contracts/
+zksync-system-contracts/=lib/zksync-era/system-contracts/contracts/
